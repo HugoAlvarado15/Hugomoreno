@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ferretería</title>
+    <style>
+        body {
+            background-color: #F5F2E9;
+        }
+
+        marquee {
+            background-color: rgb(255, 109, 109);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+        }
+
+        .busqueda {
+            width: 500px;
+            height: 30px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+
+        h2 {
+            text-align: center;
+        }
+
+        #upper {
+            background-color: #F5F2E9;
+        }
+
+        #cajitas {
+            background-color: white;
+        }
+
+        #precio {
+            color: red;
+            text-align: left;
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #info {
+            color: blue;
+            text-align: left;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            z-index: 9999;
+        }
+
+        #popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+
+        #popup-video {
+            width: 100%;
+        }
+
+        #popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: whitesmoke;
+            border: none;
+            font-size: 20px;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<div id="popup-container">
+    <div id="popup-content">
+        <video id="popup-video" controls autoplay loop>
+            <source src="multimedia/herramientas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="popup-close">X</button>
+    </div>
+</div>
+
+<div style="margin-left:8rem;margin-right: 8rem">
+
+    <body>
+        <marquee direction="left">Lo sentimos, actualmente nuestro sitio se encuentra en mantenimiento.</marquee>
+        <table width="100%" height="100" cellpadding="10" cellspacing="10" id="upper">
+            <tr>
+                <td colspan="2"><a href="principal.html"><img src="multimedia/La Ideal.jpg" width="65%"
+                            height="65%"></a></td>
+                <td class="arriba">
+                    <input type="text" class="busqueda" placeholder="Buscar">
+                </td>
+            </tr>
+        </table>
+        <h1>Herramientas</h1>
+        <hr>
+        <table width="100%" height="100" cellpadding="10" cellspacing="10">
+            <tr id="cajitas">
+                <td>
+                    <h2>Set de Tenazas</h2>
+                    <ul>
+                        <p id="precio">$15.99</p>
+                        <p id="info">Información del producto:</p>
+                        <li>FABRICADAS EN ACERO</li>
+                        <br>
+                        <li>MANGOS CON FORRO</li>
+                        <br>
+                        <li>INCLUYE 3 PIEZAS</li>
+                    </ul>
+                    <center><img src="multimedia/tenazas.jpg" width="90%" height="20%"></center>
+                </td>
+
+                <td>
+                    <h2>Set de Destornilladores</h2>
+                    <ul>
+                        <p id="precio">$13.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>FABRICADOS EN ACERO</li>
+                        <br>
+                        <li>PUNTAS MAGNÉTICAS</li>
+                        <br>
+                        <li>INCLUYE 10 PIEZAS</li>
+                    </ul>
+                    <center><img src="multimedia/destornillador.jpg" width="80%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Set de Llaves</h2>
+                    <ul>
+                        <p id="precio">$11.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>FABRICADAS EN ACERO</li>
+                        <br>
+                        <li>INCLUYE 8 LLAVES MIXTAS DESDE LOS 6 A LOS 19MM</li>
+                    </ul>
+                    <center><img src="multimedia/llave.jpg" width="100%" height="60%"></center>
+                </td>
+            </tr>
+            <tr id="cajitas">
+                <td>
+                    <h2>Martillo</h2>
+                    <ul>
+                        <p id="precio">$5.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>MANGO DE MADERA</li>
+                        <br>
+                        <li>CUMPLE CON LAS NORMAS ANSI B173.1</li>
+                        <br>
+                        <li>DISEÑO DE CABEZA CONICA</li>
+                    </ul>
+                    <center><img src="multimedia/martillo.jpg" width="80%" height="40%"></center>
+                </td>
+
+                <td>
+                    <h2>Cinta Metrica</h2>
+                    <ul>
+                        <p id="precio">$6.99</p>
+                        <p id="info">Información del producto:</p>
+                        <li>CON BOTÓN DE TRABA Y DOBLE GANCHO DE HOJA</li>
+                        <br>
+                        <li>HOJA DE ACERO Y CAJA CON RECUBRIMIENTO DE GOMA</li>
+                        <br>
+                        <li>DISEÑO CON ESCALA MÉTRICA Y EN PULGADAS</li>
+                        <br>
+                        <li>DIMENSIONES: 8M DE LARGO X 25MM DE ANCHO</li>
+                    </ul>
+                    <center><img src="multimedia/cinta.jpg" width="50%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Lentes Protectores</h2>
+                    <ul>
+                        <p id="precio">$1.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>ANTIEMPAÑANTE</li>
+                        <br>
+                        <li>BRINDAN PROTECCIÓN UV</li>
+                        <br>
+                        <li>RESISTENTE A IMPACTOS Y RASGUÑOS</li>
+                    </ul>
+                    <center><img src="multimedia/lentes.jpg" width="80%" height="60%"></center>
+                </td>
+            </tr>
+            <tr id="cajitas">
+                <td>
+                    <h2>Taladro</h2>
+                    <ul>
+                        <p id="precio">$69.90</p>
+                        <p id="info">Información del producto:</p>
+                        <li>MOTOR DE 550 WATTS</li>
+                        <br>
+                        <li>VELOCIDAD REVERSIBLE</li>
+                        <br>
+                        <li>BROCAS INCLUIDAS</li>
+                        <br>
+                        <li>PERFORACIÓN MÁXIMA EN MADERA 25MM, CONCRETO 13MM Y ACERO 10MM</li>
+                    </ul>
+                    <center><img src="multimedia/taladro.jpg" width="70%" height="40%"></center>
+                </td>
+
+                <td>
+                    <h2>Pulidora</h2>
+                    <ul>
+                        <p id="precio">$232.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>Motor de 1250 WATTS (12 AMPERIOS)</li>
+                        <br>
+                        <li>VELOCIDAD VARIABLE 600-3500 RPM</li>
+                        <br>
+                        <li>ENGRANAJES DE ACERO, TRATADOS TERMICAMENTE</li>
+                        
+                    </ul>
+                    <center><img src="multimedia/pulidora.jpg" width="90%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Caja para Herramientas</h2>
+                    <ul>
+                        <p id="precio">$19.90</p>
+                        <p id="info">Información del producto:</p>
+                        <li>OJOS DE CANDADO PARA SEGURIDAD</li>
+                        <br>
+                        <li>BANDEJA DE HERRAMIENTAS EXTRAÍBLE PARA PIEZAS MÁS PEQUEÑAS</li>
+                    </ul>
+                    <center><img src="multimedia/caja.jpg" width="70%" height="60%"></center>
+                </td>
+            </tr>
+
+
+
+
+        </table>
+</div>
+<script>
+    window.onload = function () {
+        var popupContainer = document.getElementById('popup-container');
+        var popupClose = document.getElementById('popup-close');
+        var popupVideo = document.getElementById('popup-video');
+
+        function openPopup() {
+            popupContainer.style.display = 'block';
+            popupVideo.play();
+        }
+
+        function closePopup() {
+            popupContainer.style.display = 'none';
+            popupVideo.pause();
+        }
+
+        popupClose.addEventListener('click', closePopup);
+        openPopup();
+    };
+
+</script>
+</body>
+
+</html>

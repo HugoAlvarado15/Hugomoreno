@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hogar</title>
+    <style>
+        body {
+            background-color: #F5F2E9;
+        }
+
+        marquee {
+            background-color: rgb(255, 109, 109);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+        }
+
+        .busqueda {
+            width: 500px;
+            height: 30px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+
+        h2 {
+            text-align: center;
+        }
+
+        #upper {
+            background-color: #F5F2E9;
+        }
+
+        #cajitas {
+            background-color: white;
+        }
+
+        #precio {
+            color: red;
+            text-align: left;
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #info {
+            color: blue;
+            text-align: left;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            z-index: 9999;
+        }
+
+        #popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+
+        #popup-video {
+            width: 100%;
+        }
+
+        #popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: whitesmoke;
+            border: none;
+            font-size: 20px;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<div id="popup-container">
+    <div id="popup-content">
+        <video id="popup-video" controls autoplay loop>
+            <source src="multimedia/cocina.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="popup-close">X</button>
+    </div>
+</div>
+
+<div style="margin-left:8rem;margin-right: 8rem">
+
+    <body>
+        <marquee direction="left">Lo sentimos, actualmente nuestro sitio se encuentra en mantenimiento.</marquee>
+        <table width="100%" height="100" cellpadding="10" cellspacing="10" id="upper">
+            <tr>
+                <td colspan="2"><a href="principal.html"><img src="multimedia/La Ideal.jpg" width="65%"
+                            height="65%"></a></td>
+                <td class="arriba">
+                    <input type="text" class="busqueda" placeholder="Buscar">
+                </td>
+            </tr>
+        </table>
+        <h1>Artículos de Hogar</h1>
+        <hr>
+
+        <table width="100%" height="100" cellpadding="10" cellspacing="10">
+            <tr id="cajitas">
+                <td>
+                    <h2>Licuadora</h2>
+                    <ul>
+                        <p id="precio">$99.99</p>
+                        <p id="info">Información del producto:</p>
+                        <li>CON JARRA DE VIDRIO</li>
+                        <br>
+                        <li>CONTROL DE 6 VELOCIDADES</li>
+                        <br>
+                        <li>300 WATTS DE POTENCIA</li>
+                        <br>
+                        <li>CUCHILLAS DE ACERO INOXIDABLE</li>
+                    </ul>
+                    <center><img src="multimedia/licuadora.jpg" width="100%" height="40%"></center>
+                </td>
+
+                <td>
+                    <h2>Batidora</h2>
+
+                    <ul>
+                        <p id="precio">$99.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>7 VELOCIDADES</li>
+                        <br>
+                        <li>TAZON DE ACERO INOXIDABLE DE 5LT DE CAPACIDAD</li>
+                        <br>
+                        <li>CABEZAL ELEVABLE</li>
+                        <br>
+                        <li>GANCHO PARA MASA INCLUIDO</li>
+                    </ul>
+                    <center><img src="multimedia/batidora.jpg" width="90%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Bateria de Cocina</h2>
+                    <ul>
+                        <p id="precio">$74.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>MATERIAL ANTIADHERENTE</li>
+                        <br>
+                        <li>CONTIENE TAPAS DE VIDRIO CON SALIDA DE VAPOR</li>
+                        <br>
+                        <li>CONTIENE 1 SARTEN, 1 CACEROLA, <br> 2 OLLAS, Y UN HERVIDOR DE LECHE</li>
+                    </ul>
+                    <center><img src="multimedia/bateria.jpg" width="100%" height="60%"></center>
+                </td>
+            </tr>
+
+            <tr id="cajitas">
+                <td>
+                    <h2>Microondas</h2>
+                    <ul>
+                        <p id="precio">$99.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>VOLTAJE: 120V 60HZ</li>
+                        <br>
+                        <li>10 NIVELES DE POTENCIA DE MICROONDAS</li>
+                        <br>
+                        <li>BANDEJA GIRATORIA DE CRISTAL 270MM</li>
+                        <br>
+                        <li>CAPACIDAD: 25 L (0,9 PIES CÚBICOS)</li>
+                    </ul>
+                    <center><img src="multimedia/horno.jpg" width="100%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Robot de Cocina</h2>
+                    <ul>
+                        <p id="precio">$21.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>CUCHILLA Y RECIPIENTE EXTRAÍBLES</li>
+                        <br>
+                        <li>70 WATTS DE POTENCIA</li>
+                        <br>
+                        <li>CUCHILLA DE ACERO</li>
+                        <br>
+                        <li>CON BOTON PULSE</li>
+                    </ul>
+                    <center><img src="multimedia/picador.jpg" width="70%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Tostadora</h2>
+                    <ul>
+                        <p id="precio">$29.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>CAPACIDAD 2 REBANADAS</li>
+                        <br>
+                        <li>800 WATTS DE POTENCIA</li>
+                        <br>
+                        <li>CONTROL DE TOSTADO DE 7 POSICIONES</li>
+                        <br>
+                        <li>CON BANDEJA RECOGEMIGAS <br> EXTRAÍBLE</li>
+                    </ul>
+                    <center><img src="multimedia/tostador.jpg" width="60%" height="60%"></center>
+                </td>
+            </tr>
+
+            <tr id="cajitas">
+                <td>
+                    <h2>Cafetera</h2>
+                    <ul>
+                        <p id="precio">$39.95</p>
+                        <p id="info">Información del producto:</p>
+                        <li>975 WATTS DE POTENCIA</li>
+                        <br>
+                        <li>LUZ INDICADORA DE ENCENDIDO Y APAGADO</li>
+                        <br>
+                        <li>JARRA DE VIDRIO CON CAPACIDAD DE 12 TAZAS</li>
+                        <br>
+                        <li>APTO PARA LAVAPLATOS</li>
+                    </ul>
+                    <center><img src="multimedia/cafetera.jpg" width="80%" height="40%"></center>
+                </td>
+
+                <td>
+                    <h2>Extractor de Jugos</h2>
+                    <ul>
+                        <p id="precio">$39.99</p>
+                        <p id="info">Información del producto:</p>
+                        <li>400 WATTS DE POTENCIA</li>
+                        <br>
+                        <li>CAPACIDAD DE LA JARRA: 0.45L</li>
+                        <br>
+                        <li>CARCASA DE ACERO INOXIDABLE</li>
+                        <br>
+                        <li>DISEÑO DE PIES ANTIDESLIZANTES</li>
+                    </ul>
+                    <center><img src="multimedia/extractor.jpg" width="80%" height="60%"></center>
+                </td>
+
+                <td>
+                    <h2>Freidora de Aire</h2>
+                    <ul>
+                        <p id="precio">$54.99</p>
+                        <p id="info">Información del producto:</p>
+                        <li>CAPACIDAD:4.5L</li>
+                        <br>
+                        <li>POTENCIA: 1400W</li>
+                        <br>
+                        <li>OLLA ANTIADHERENTE ANTI SOBRECALENTAMIENTO</li>
+                        <br>
+                        <li>TEMPERATURA Y  <br>TEMPORIZADOR AJUSTABLES</li>
+                    </ul>
+                    <center><img src="multimedia/freidora.jpg" width="60%" height="60%"></center>
+                </td>
+            </tr>
+
+
+        </table>
+
+</div>
+<script>
+    window.onload = function () {
+        var popupContainer = document.getElementById('popup-container');
+        var popupClose = document.getElementById('popup-close');
+        var popupVideo = document.getElementById('popup-video');
+
+        function openPopup() {
+            popupContainer.style.display = 'block';
+            popupVideo.play();
+        }
+
+        function closePopup() {
+            popupContainer.style.display = 'none';
+            popupVideo.pause();
+        }
+
+        popupClose.addEventListener('click', closePopup);
+        openPopup();
+    };
+
+</script>
+</body>
+
+</html>
